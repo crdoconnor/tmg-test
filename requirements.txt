@@ -1,0 +1,10 @@
+uvicorn
+fastapi
+langchain
+langchain-community
+openai
+pytest
+ipython
+python-dotenv
+jinja2
+nest_asyncio

@@ -1,0 +1,20 @@
+italian
+indian
+french
+british
+mexican
+middle eastern
+spanish
+chinese
+thai
+greek
+american
+japanese
+moroccan
+scandinavian
+vietnamese
+korean
+scottish
+german
+russian
+west african

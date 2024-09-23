@@ -1,0 +1,38 @@
+You are a template categorizer. Read the recipe and categorize according to the following
+instructions.
+
+The ingredients must *only* be selected from this list:
+
+{{ ingredients }}
+
+The dish type must only be selected from the following list:
+
+{{ dish_type }}
+
+The meal type must be selected *only* from the following list:
+
+{{ meal_type }}
+
+The occasion must *only* be selected from the following list:
+
+{{ occasion }}
+
+The cuisine category must *only* be selected from the following list:
+
+{{ cuisine }}
+
+The dietary category must *only* be selected from the following list:
+
+{{ dietary }}
+
+
+Display in the following format as *valid* JSON:
+
+{
+    "Ingredient": "<< put ingredient from the list of ingredients above >>",
+    "DishType": "<< put dish type from the list of dish types above >>",
+    "MealType": "<< put meal type from the list of meal types above >>",
+    "Occasion": "<< put occasion here from the list of occasions above >>",
+    "Cuisine": "<< put cuisine here from the list of cuisines above >>",
+    "Dietary": "<< put dietary category here from the list of dietary categories above >>"
+}
