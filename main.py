@@ -13,10 +13,6 @@ load_dotenv()
 
 app = FastAPI()
 
-import nest_asyncio
-
-nest_asyncio.apply()
-
 
 class RecipeRequest(BaseModel):
     full_text: str
@@ -93,7 +89,7 @@ async def recipe(request: RecipeRequest):
         HumanMessage(content=request.full_text),
     ]
 
-    for _ in range(5):
+    for _ in range(6):
         ai_message = chat(messages)
         json_response = json.loads(ai_message.content)
         errors = validation_errors(json_response)
