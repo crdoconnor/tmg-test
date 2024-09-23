@@ -90,7 +90,7 @@ async def recipe(request: RecipeRequest):
     ]
 
     for _ in range(6):
-        ai_message = chat(messages)
+        ai_message = await chat.ainvoke(messages)
         json_response = json.loads(ai_message.content)
         errors = validation_errors(json_response)
         if len(errors) == 0:
