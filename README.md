@@ -21,5 +21,6 @@ To test:
 
 ## Testing
 
-* Already has one test - end to end
+* Already has one test - end to end (might be flaky).
 * Inject the LLM Runner as a dependency in fastapi, swap with fake to run dependency-less unit tests.
+* For testing the LLM build up a test set of recipes and expected tags and evaluate response.
