@@ -1,13 +1,11 @@
 .PHONY: build
 build:
-	rm -rf ./venv
-	virtualenv venv
-	./venv/bin/pip install -r requirements.txt
+	docker build . -t tmgtestcolm
 
 .PHONY: run
 run: ## Run application locally
-	./venv/bin/uvicorn main:app --reload --workers 1 --host 0.0.0.0 --port 8080
+	docker run -p 8080:8080 tmgtestcolm0
 
 .PHONY: test
 test: ## Run tests
-	./venv/bin/pytest -s test_recipes.py
+	docker run --entrypoint pytest -it tmgtestcolm pytest -s test_recipes.py

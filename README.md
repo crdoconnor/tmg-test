@@ -15,7 +15,7 @@ To test:
 ## Deploying in the cloud
 
 * Use poetry / pipenv to fix requirements.
-* Create docker container which installs packages and runs uvicorn
+* Don't bake the secrets into the docker container.
 * Push docker container to registry
 * Create secret in secret storage in cloud
 * Create service manifest (e.g. in kubernetes) which will run container as a service and inject the secret as an environment variable
