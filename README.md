@@ -14,6 +14,7 @@ To test:
 
 ## Deploying in the cloud
 
+* Use poetry / pipenv to fix requirements.
 * Create docker container which installs packages and runs uvicorn
 * Push docker container to registry
 * Create secret in secret storage in cloud
