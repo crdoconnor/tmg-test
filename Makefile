@@ -4,7 +4,7 @@ build:
 
 .PHONY: run
 run: ## Run application locally
-	docker run -p 8080:8080 tmgtestcolm0
+	docker run -p 8080:8080 tmgtestcolm
 
 .PHONY: test
 test: ## Run tests
